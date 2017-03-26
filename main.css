@@ -1,0 +1,84 @@
+*{
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%; /*fills entirety of user's page*/
+	overflow: none; /*can't scroll*/
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto";
+	background-color: rgb(249, 248, 247);
+}
+div {
+	display: inline-block; /*inline block makes blocks stand next to each other*/
+	margin-right: -4px; /* this line always goes with inline block*/
+	vertical-align: middle; /*aligns the middles of the divs*/
+}
+
+div#top-left {
+	width: 50%;
+	min-height: 60%;
+	background-image: url('image.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/*padding gives space INSIDE the box, margin gives space outside the box. Padding usually  has 4, 2 or 1 numbers. 
+If there are 4 numbers, it is: T L B R (top left botom right) If there are 2, it's TB LR (top&bottom same number, left&right same number)
+If 1 number, it means TLBR - they all have teh same space. 
+*/
+div#top-right {
+	width: 50%;
+	min-height: 60%;
+	padding: 5% 8%;
+	color: rgb(83,88,95);
+}
+
+div#bottom {
+	width: 100%;
+	min-height: 40%;
+	padding: 3% 20%;
+	color: rgb(220, 222, 224);
+	background-color: rgb(40, 40, 40);
+}
+
+div#bottom-left {
+	width: 50%;
+	vertical-align: top;
+}
+
+div#bottom-right {
+	width: 30%;
+	margin-left: 20%;
+	vertical-align: top;
+
+}
+
+h1{
+	font-size: 45px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+h2{
+	font-size: 35px;
+	margin-bottom: 15px;
+}
+
+p{
+	font-size: 22px;
+	font-weight: lighter;
+	line-height: 1.4;
+	margin: 0;
+
+}
+
+a{
+	text-decoration: none;
+	font-weight: bold;
+	color: rgb(3, 203, 235);
+}
+
+
+
